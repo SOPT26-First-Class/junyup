@@ -10,7 +10,7 @@
 ## 설계
 ### User Table
 | uid | name | id | hash | salt | email | phone | createdAt | lastLoginedAt |
-|:—:|:---:|:—:|:—:|:—:|:—:|:—:|:—:|:—:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | junyup | junyup123 | abc | qwer | junyup@gmail.com | 010-1111-1111 | 1592304345894 | 1592304345894 |
 | 2 | alice | alice111 | bcd | asdf | alice@gmail.com | 010-2222-2222 | 1592301245894 | 1592304341294 |
 | 3 | bob | bob321 | cde | zxcv | bob@gmai.com | 010-3333-3333 | 1592281245894 | 1592304345894 |
@@ -20,7 +20,7 @@
 
 ### Article Table
 | aid | uid | title | content | createdAt | updatedAt |
-|:—:|:---:|:—:|:—:|:—:|:—:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 1 | junyup’s title | junyup’s content | 1592304345894 | 1592304345894 |
 
 * **primary key**: aid
@@ -29,7 +29,7 @@
 
 ### Comment Table
 | cid | uid | aid | content | createdAt | updatedAt |
-|:—:|:---:|:—:|:—:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 1 | 1 | comment1 | 1592304345894 | 1592304345894 |
 | 2 | 2 | 1 | comment2 | 1592304345894 | 1592304345894 |
 
@@ -39,7 +39,7 @@
 
 ### Like Table
 | lid | uid | aid | createdAt |
-|:—:|:---:|:—:|:—:|
+|:---:|:---:|:---:|:---:|
 | 1 | 3 | 1 | 1592304345894 |
 | 2 | 2 | 1 | 1592304341234 |
 
