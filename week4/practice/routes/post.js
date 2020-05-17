@@ -3,10 +3,6 @@ const router = express.Router();
 const Post = require('../models/post');
 const util = require('../modules/util');
 const statusCode = require('../modules/statusCode');
-const resMessage = require('../modules/responseMessage');
-const { getPostById } = require('../models/post');
-
-
 
 router.get('/', async (req, res) => {
     try {
@@ -19,7 +15,6 @@ router.get('/', async (req, res) => {
         return res.status(statusCode.DB_ERROR).send(util.fail(statusCode.DB_ERROR, 'DB error'));
     }
 });
-
 
 // get post by user id
 router.get('/:id', async (req, res) => {
